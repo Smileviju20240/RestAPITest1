@@ -18,7 +18,6 @@ public class ToDoMVCTest {
 	
 	@BeforeTest
 	  public void beforeTest() {
-		//System.setProperty("webdriver.chrome.driver", "E:\\Selenium SetUp\\Latest\\chromedriver_win32\\chromedriver.exe");
 		  WebDriverManager.chromedriver().setup();
 		  driver = new ChromeDriver();
 		    

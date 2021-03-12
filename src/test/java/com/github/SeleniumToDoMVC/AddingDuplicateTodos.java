@@ -49,7 +49,6 @@ public class AddingDuplicateTodos {
 		System.out.println(driver.findElement(By.xpath("//a[text()='Completed']")).getText());
 		
 		List<WebElement> ar = new ArrayList<>();
-		//ar = driver.findElements(By.xpath("//input[contains(@data-reactid,'.0.1.2')]"));
 		ar= driver.findElements(By.xpath("//div[@class='view']//label"));
 		System.out.println(ar.size());
 		for(WebElement p:ar) {
@@ -57,8 +56,6 @@ public class AddingDuplicateTodos {
 		}
 		
   }
-  
-
   @AfterTest
   public void afterTest() throws InterruptedException {
 	  Thread.sleep(8000);
